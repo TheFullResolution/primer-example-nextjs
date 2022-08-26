@@ -3,6 +3,7 @@ import styles from '../../styles/Home.module.css';
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
+import { Button } from '@primer-io/goat';
 
 const Success: NextPage = () => {
     return (
@@ -14,7 +15,7 @@ const Success: NextPage = () => {
             </Head>
 
             <main className={styles.main}>
-                <Link href={'/'} passHref><a>Go Back</a></Link>
+                <Link href={'/'} passHref><Button as={'a'}>Go Back</Button></Link>
                 <h1 className={styles.title}>Success</h1>
                 <p className={styles.description}>You bought the spaceship!</p>
             </main>

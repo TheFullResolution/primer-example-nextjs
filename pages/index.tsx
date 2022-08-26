@@ -5,6 +5,7 @@ import Nauvoo from '../public/images/S02e04nauvoo16m00s.webp';
 import Rocinante from '../public/images/RociArtS4.webp';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
+import { Button } from '@primer-io/goat';
 
 const Home: NextPage = () => {
     return (
@@ -36,12 +37,14 @@ const Home: NextPage = () => {
                         <a className={styles.card}>
                             <h2>Nauvoo / Behemoth &rarr;</h2>
                             <Image src={Nauvoo} alt="Picture of Nauvoo" />
+                            <Button>Buy</Button>
                         </a>
                     </Link>
                     <Link href="buy/rocinante" passHref>
                         <a className={styles.card}>
                             <h2>Rocinante &rarr;</h2>
                             <Image src={Rocinante} alt="Picture of Rocinante" />
+                            <Button>Buy</Button>
                         </a>
                     </Link>
                 </div>
